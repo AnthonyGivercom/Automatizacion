@@ -7,11 +7,7 @@ import pymssql
 import pandas as pd
 import os
 import playwright 
-#conexion a la bd
-#server = 'osiris'
-#db = 'MGG_20230612_1017'
-#username = 'sa'
-#password = 'Tps4c2014'
+
 
 data_puerto =[]
 data_etd_fecha = []
@@ -210,6 +206,5 @@ schedule.every(24).hours.do(ejecutar)
 while True:
     schedule.run_pending()
     time.sleep(1)
-#'192.168.40.219'
-#server=servidor, user='TAF', password='Tps4c2022', database='TAF_Ecuador'
+
 #scrape_Linescape(nave,viaje,"cma")
